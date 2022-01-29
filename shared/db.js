@@ -9,6 +9,8 @@ const dbConnect = async () => {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         autoIndex: true,
+        useFindAndModify: false,
+        useCreateIndex: true
       }
     );
     console.log("DB Connected");
